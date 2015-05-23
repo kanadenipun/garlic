@@ -1,8 +1,8 @@
 Router.map(function(){
-	this.route('landing', { 
+	/*this.route('landing', { 
 		path: '/',
 		controller: 'OuterLayoutController'
-	});
+	});*/
 
 	this.route('signup', {
 		path: '/signup',	
@@ -29,7 +29,7 @@ Router.map(function(){
 	});
 
 	this.route('download', {
-		path: '/download',	
+		path: '/',	
   	    controller: 'OuterLayoutController',
   	    yieldTemplates: {
 			'outer_header': {to: 'header'},
