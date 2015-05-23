@@ -1,6 +1,6 @@
   <template name="download">
 
-<div id="loginErrormessage" class="alert alert-danger" role="alert" style="display:none; margin-top:50px">..sdfsdfsdf sfsd fsd fsd fsd fs fs .</div>
+    <div id="loginErrormessage" class="alert alert-danger" role="alert" style="display:none; margin-top:50px">..sdfsdfsdf sfsd fsd fsd fsd fs fs .</div>
 
     <div class="container" style="padding-top:10%">
       <h1 class="cover-heading">What the Link ?</h1>
@@ -19,8 +19,37 @@
      </form>
 
 
+     <div class="table-responsive">
+      <table class="table table-hover">
+        <tr>
+          <th>File Name</th>
+          <th>File extension</th>
+          <th>File type</th>
+          <th>File size</th>
+          <th>Link</th>
+        </tr>
 
-   </div>
+        {{#each myFiles}}
+        <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.extension}}</td>
+        <td>{{this.type}}</td>
+        <td>{{this.size}}</td>
+        <td><a href="{{this.url}}">Download</a></td>
+        </tr>
+        {{/each}}
 
 
-  </template>
+      </table>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</template>

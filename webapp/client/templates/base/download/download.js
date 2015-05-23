@@ -25,7 +25,7 @@ Template.download.events({
 
 			});
 		}
-		
+
 		else{
 			displayAlert("Not a valid URL");
 		}
@@ -69,3 +69,10 @@ function displaySuccess(message){
 	        		displaySuccess("download completed");
 	        	}
 	        });*/
+
+
+Template.download.helpers({
+	myFiles: function(){
+		return Fls.find();
+	}
+});

@@ -51,3 +51,15 @@ Meteor.methods({
 }
 
 });
+
+/*
+ var handler = {
+        "fileHandler": function (options) {
+            return {
+                blob: options.blob,
+                fileRecord: options.fileRecord
+            };
+        }
+    }
+    
+Fls.fileHandlers(handler);*/
