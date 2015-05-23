@@ -7,3 +7,14 @@
 meteor-platform
 autopublish
 insecure
+mizzao:bootstrap-3
+http
+iron:router
+jquery
+momentjs:moment
+chart:chart
+
+tomi:upload-server
+tomi:upload-jquery
+cfs:standard-packages
+cfs:filesystem

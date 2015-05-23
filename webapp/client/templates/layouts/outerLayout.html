@@ -1,0 +1,15 @@
+<template name="outerLayout">
+	
+	<div class="top">
+		{{> yield region="header"}}
+	</div>
+
+	<div class="main">
+		{{> yield}}
+	</div>
+
+	<div class="bottom">
+		{{> yield region="footer"}}
+	</div>
+
+</template>
