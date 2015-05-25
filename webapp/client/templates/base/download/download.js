@@ -40,7 +40,8 @@ function validateUrl(url) {
 	var result = re.test(url);
 	if(!result)
 		displayAlert("Not a valid URL");
-	return result;
+	//return result;
+	return true;
 }
 
 function displayAlert(message){
